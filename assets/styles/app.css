@@ -54,3 +54,9 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.products_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}

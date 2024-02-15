@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Produit{% endblock %}
+
+{% block body %}
+<section class="products_wrapper">
+    <div class="product_card">
+        <h2 class="product_name">{{ product.name }}</h2>
+        <p class="product_desc">{{ product.description }}</p>
+        <h3 class="product_price">{{ product.price }} €</h3>
+        <a href="{{ path('app_product') }}">Retour à la liste</a>
+    </div>
+</section>
+
+{% endblock %}
